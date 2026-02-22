@@ -14,6 +14,7 @@ import { use } from "react";
 import { RootState } from "@/store/store";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Header() {
   const cartItems = useSelector((state: RootState) => state.cart.items);
@@ -22,13 +23,13 @@ export default function Header() {
     <header className="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] sm:w-[91%] max-w-7xl z-50 ">
       <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-md px-6 py-4 flex items-center justify-between">
         <div className="hidden md:flex gap-8 font-medium text-sm">
-          <Button variant="ghost" className="p-0 h-auto">
+          <Link href="/" className="p-0 h-auto">
             New Drops 🔥
-          </Button>
+          </Link>
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="p-0 h-auto">
+              <Button variant="ghost" className="p-0 h-auto cursor-pointer">
                 Men
               </Button>
             </DropdownMenuTrigger>
@@ -41,7 +42,7 @@ export default function Header() {
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="p-0 h-auto">
+              <Button variant="ghost" className="p-0 h-auto cursor-pointer">
                 Women
               </Button>
             </DropdownMenuTrigger>
@@ -55,16 +56,16 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="cursor-pointer">
                 <Menu size={22} />
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="p-6">
               <div className="flex flex-col gap-6 mt-8 text-lg">
-                <Button variant="ghost" className="justify-start">
+                <Link href="/"  className="justify-start">
                   New Drops 🔥
-                </Button>
-                <Button variant="ghost" className="justify-start">
+                </Link>
+                <Button variant="ghost" className="justify-start cursor-pointer">
                   Men
                 </Button>
                 <Button variant="ghost" className="justify-start">
@@ -79,16 +80,16 @@ export default function Header() {
         </h1>
 
         <div className="flex items-center gap-4 md:gap-6">
-          <Button variant="ghost" size="icon">
+          <Button variant="ghost" size="icon" className="cursor-pointer">
             <Search size={20} />
           </Button>
 
-          <Button variant="ghost" size="icon" className="hidden md:flex">
+          <Button variant="ghost" size="icon" className="hidden md:flex cursor-pointer">
             <User size={20} />
           </Button>
 
           <div className="relative" onClick={() => router.push("/cart")}>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="cursor-pointer">
               <ShoppingCart size={20} />
             </Button>
             <Badge className="absolute -top-2 -right-2 bg-orange-400 text-white px-1.5">

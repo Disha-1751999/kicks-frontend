@@ -104,7 +104,7 @@ export default function ReviewsSectionTemplates() {
             REVIEWS
           </h2>
 
-          <button className="h-10 px-5 rounded-md bg-[#4E67FF] text-white text-xs font-semibold tracking-wide">
+          <button className="h-10 px-5 rounded-md cursor-pointer bg-[#4E67FF] text-white text-xs font-semibold tracking-wide">
             SEE ALL
           </button>
         </div>

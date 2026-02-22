@@ -185,7 +185,7 @@ function ProductInfo({
               <button
                 key={index}
                 onClick={() => setSelectedColor(color)}
-                className={`w-10 h-10 rounded-full border-2 ${
+                className={`w-10 h-10 rounded-full border-2 cursor-pointer ${
                   selectedColor === color ? "border-black" : "border-gray-300"
                 }`}
                 style={{ backgroundColor: color }}
@@ -207,7 +207,7 @@ function ProductInfo({
               <button
                 key={size}
                 onClick={() => setSelectedSize(size)}
-                className={`w-12 h-10 text-sm rounded-md border font-medium ${
+                className={`w-12 h-10 text-sm rounded-md border font-medium cursor-pointer ${
                   selectedSize === size
                     ? "bg-black text-white"
                     : "bg-[#F3F3F1] text-black border-[#E0E0DC]"
@@ -223,7 +223,7 @@ function ProductInfo({
       <div className="flex gap-3 pt-4">
         <Button
           onClick={handleAddToCart}
-          className="flex-1 h-12 bg-black text-white hover:bg-black/90 rounded-md"
+          className="flex-1 h-12 bg-black text-white hover:bg-black/90 rounded-md cursor-pointer"
         >
           ADD TO CART
         </Button>
@@ -233,7 +233,7 @@ function ProductInfo({
         </Button>
       </div>
 
-      <Button className="w-full h-12 bg-[#4D7CF3] hover:bg-[#2f63e6] text-white rounded-md">
+      <Button className="w-full h-12 bg-[#4D7CF3] hover:bg-[#2f63e6] text-white rounded-md cursor-pointer">
         BUY IT NOW
       </Button>
 

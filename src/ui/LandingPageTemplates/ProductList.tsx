@@ -90,7 +90,7 @@ export default function ProductList({
         {variant === "grid" && ctaLabel && (
           <Button
             onClick={onCtaClick}
-            className="bg-[#4D7CF3] hover:bg-[#2f63e6] text-white px-6 py-3 rounded-lg text-sm font-medium"
+            className="bg-[#4D7CF3] hover:bg-[#2f63e6] cursor-pointer text-white px-6 py-3 rounded-lg text-sm font-medium"
           >
             {ctaLabel}
           </Button>
@@ -102,6 +102,7 @@ export default function ProductList({
               size="icon"
               variant="outline"
               disabled={currentPage === 1}
+              className="cursor-pointer"
               onClick={() => setCurrentPage((p) => p - 1)}
             >
               <ChevronLeft size={16} />
@@ -110,6 +111,7 @@ export default function ProductList({
             <Button
               size="icon"
               variant="outline"
+              className="cursor-pointer"
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage((p) => p + 1)}
             >
@@ -165,7 +167,7 @@ function ProductCard({ product }: { product: Product }) {
           {" "}
           {product.title}{" "}
         </h3>
-        <Button className="w-full bg-black text-white hover:bg-gray-900 text-xs py-3 rounded-lg">
+        <Button className="w-full bg-black cursor-pointer text-white hover:bg-gray-900 text-xs py-3 rounded-lg">
           {" "}
           VIEW PRODUCT -{" "}
           <span className="text-[#FFD86C] ml-1">${product.price}</span>

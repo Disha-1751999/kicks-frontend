@@ -100,11 +100,11 @@ export default function CartTemplate() {
                       ))}
                     </select>
 
-                    <button>
+                    <button className="cursor-pointer">
                       <Heart size={18} />
                     </button>
 
-                    <button onClick={() => handleRemoveItemFromCart(item.id)}>
+                    <button className="cursor-pointer" onClick={() => handleRemoveItemFromCart(item.id)}>
                       <Trash2 size={18} />
                     </button>
                   </div>
@@ -138,9 +138,9 @@ export default function CartTemplate() {
             <span>${total.toFixed(2)}</span>
           </div>
 
-          <Button className="w-full bg-black text-white h-12">CHECKOUT</Button>
+          <Button className="w-full bg-black text-white h-12 cursor-pointer">CHECKOUT</Button>
 
-          <button className="text-sm underline text-gray-600">
+          <button className="text-sm underline text-gray-600 cursor-pointer">
             Use a promo code
           </button>
         </div>

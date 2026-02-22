@@ -93,7 +93,7 @@ export default function CategoriesSection() {
               <button
                 onClick={onPrev}
                 disabled={!canPrev}
-                className={`w-9 h-9 bg-gray-400 rounded-md flex items-center justify-center transition
+                className={`w-9 h-9 bg-gray-400 cursor-pointer rounded-md flex items-center justify-center transition
                   ${canPrev ? "bg-white" : " cursor-not-allowed"}`}
               >
                 <ChevronLeft size={18} className="text-black" />
@@ -102,7 +102,7 @@ export default function CategoriesSection() {
               <button
                 onClick={onNext}
                 disabled={!canNext}
-                className={`w-9 h-9 bg-gray-400 rounded-md flex items-center justify-center transition
+                className={`w-9 h-9 bg-gray-400 rounded-md cursor-pointer flex items-center justify-center transition
                   ${canNext ? "bg-white" : " cursor-not-allowed"}`}
               >
                 <ChevronRight size={18} className="text-black" />
@@ -128,7 +128,7 @@ export default function CategoriesSection() {
                     {category.name}
                   </h3>
 
-                  <button className="w-10 h-10 bg-black rounded-md flex items-center justify-center hover:scale-105 transition">
+                  <button className="w-10 h-10 bg-black rounded-md  cursor-pointer flex items-center justify-center hover:scale-105 transition">
                     <ArrowUpRight size={18} className="text-white" />
                   </button>
                 </div>

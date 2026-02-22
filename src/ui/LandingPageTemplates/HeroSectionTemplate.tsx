@@ -43,7 +43,7 @@ const HeroSectionTemplate = ({
             We couldn’t load the featured product.
           </p>
 
-          <Button className="mt-6" onClick={() => window.location.reload()}>
+          <Button className="mt-6 cursor-pointer" onClick={() => window.location.reload()}>
             Retry
           </Button>
         </section>
@@ -91,7 +91,7 @@ const HeroSectionTemplate = ({
               Nike introducing the new air max for everyone’s comfort
             </p>
 
-            <Button className="mt-6 bg-primary hover:bg-blue-700 text-white font-bold rounded-lg px-6 py-5">
+            <Button className="mt-6 bg-primary cursor-pointer hover:bg-blue-700 text-white font-bold rounded-lg px-6 py-5">
               SHOP NOW
             </Button>
           </div>

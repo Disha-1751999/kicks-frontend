@@ -24,7 +24,7 @@ export default function Footer() {
                   />
                 </div>
 
-                <button className="h-10 px-5 rounded-md bg-[#1b1b1b] text-white text-xs font-semibold">
+                <button className="h-10 px-5 rounded-md cursor-pointer bg-[#1b1b1b] text-white text-xs font-semibold">
                   SUBMIT
                 </button>
               </div>
@@ -81,28 +81,28 @@ export default function Footer() {
                 </h4>
                 <div className="flex items-center gap-4 text-white/90">
                   <button
-                    className="hover:opacity-80 transition"
+                    className="hover:opacity-80 transition cursor-pointer"
                     aria-label="Facebook"
                   >
                     <Facebook size={18} />
                   </button>
                   <button
-                    className="hover:opacity-80 transition"
+                    className="hover:opacity-80 transition cursor-pointer"
                     aria-label="Instagram"
                   >
                     <Instagram size={18} />
                   </button>
                   <button
-                    className="hover:opacity-80 transition"
+                    className="hover:opacity-80 transition cursor-pointer"
                     aria-label="Twitter"
                   >
                     <Twitter size={18} />
                   </button>
                   <button
-                    className="hover:opacity-80 transition"
+                    className="hover:opacity-80 transition cursor-pointer"
                     aria-label="TikTok"
                   >
-                    <span className="inline-block w-4.5 h-4.5 rounded-full bg-white/85" />
+                    <span className="inline-block w-4.5 h-4.5 rounded-full cursor-pointer bg-white/85" />
                   </button>
                 </div>
               </div>
