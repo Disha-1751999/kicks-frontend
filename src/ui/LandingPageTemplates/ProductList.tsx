@@ -151,11 +151,14 @@ function ProductCard({ product }: { product: Product }) {
             New
           </span>
           <Image
-            src={product.images[0]}
+            src={product.images[0] || "/placeholder.jpg"}
             alt={product.title}
             width={300}
             height={300}
             className="object-cover p-2"
+            onError={(e) => {
+              e.currentTarget.src = "/placeholder.jpg";
+            }}
           />
         </div>
         <h3 className="text-sm uppercase font-bold text-black mb-4 leading-tight">

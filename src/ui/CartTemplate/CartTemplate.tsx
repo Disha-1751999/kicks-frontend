@@ -64,10 +64,13 @@ export default function CartTemplate() {
               <div key={item.id} className="flex gap-6 border-b pb-6">
                 <div className="w-32 h-32 bg-[#F3F3F1] rounded-xl relative">
                   <Image
-                    src={item.images[0]}
+                    src={item.images[0] || "/placeholder.jpg"}
                     alt={item.title}
                     fill
                     className="object-contain p-3"
+                    onError={(e) => {
+                      e.currentTarget.src = "/placeholder.jpg";
+                    }}
                   />
                 </div>
                 <div className="flex flex-col flex-1 space-y-2">

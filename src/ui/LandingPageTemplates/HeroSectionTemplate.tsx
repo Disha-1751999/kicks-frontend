@@ -65,13 +65,16 @@ const HeroSectionTemplate = ({
               selectedHeroImageIndex !== null
                 ? (heroProduct?.images[selectedHeroImageIndex] ??
                   "/placeholder.png")
-                : (heroProduct?.images?.[0] ?? "/placeholder.png")
+                : (heroProduct?.images?.[0] ?? "/placeholder.jpg")
             }
             alt="Nike Air Max"
             width={1600}
             height={900}
             className="w-full object-cover"
             priority
+            onError={(e) => {
+              e.currentTarget.src = "/placeholder.jpg";
+            }}
           />
 
           {/* Vertical Badge */}
@@ -102,11 +105,14 @@ const HeroSectionTemplate = ({
                 onClick={() => setSelectedHeroImageIndex(index)}
               >
                 <Image
-                  src={img}
+                  src={img || "/placeholder.jpg"}
                   alt="thumb"
                   width={100}
                   height={100}
                   className="object-cover w-full h-full"
+                  onError={(e) => {
+                      e.currentTarget.src = "/placeholder.jpg";
+                    }}
                 />
               </div>
             ))}

@@ -71,10 +71,13 @@ export default function ProductDetails() {
           <div className="bg-[#F3F3F1] rounded-3xl p-6">
             <div className="relative aspect-square">
               <Image
-                src={product.images[selectedImage]}
+                src={product.images[selectedImage] || "/placeholder.jpg"}
                 alt={product.title}
                 fill
                 className="object-contain"
+                onError={(e) => {
+                  e.currentTarget.src = "/placeholder.jpg";
+                }}
               />
             </div>
           </div>
@@ -87,10 +90,13 @@ export default function ProductDetails() {
                 className="relative w-20 h-20 rounded-xl bg-[#F3F3F1] flex-shrink-0 overflow-hidden"
               >
                 <Image
-                  src={img}
+                  src={img || "/placeholder.jpg"}
                   alt={product.title}
                   fill
                   className="object-contain p-2"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder.jpg";
+                  }}
                 />
               </button>
             ))}
@@ -110,10 +116,13 @@ export default function ProductDetails() {
             {product.images.map((img: string, index: number) => (
               <div key={index} className="relative bg-[#F3F3F1] aspect-square">
                 <Image
-                  src={img}
+                  src={img || "/placeholder.jpg"}
                   alt={product.title}
                   fill
                   className="object-contain p-10"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder.jpg";
+                  }}
                 />
               </div>
             ))}

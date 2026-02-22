@@ -61,7 +61,7 @@ function ReviewCard({
       </div>
 
       <div className={`rounded-t-2xl overflow-hidden `}>
-        <img src={image} alt="" className="w-full h-[215px] object-cover" />
+        <img src={image || "/placeholder.jpg"} alt="" className="w-full h-[215px] object-cover" />
       </div>
     </div>
   );
