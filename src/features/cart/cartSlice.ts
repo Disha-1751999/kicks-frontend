@@ -3,7 +3,6 @@ import { Product } from "@/services/ProductService";
 
 interface CartItem extends Product {
   quantity: number,
-  images:string
 }
 
 interface CartState {

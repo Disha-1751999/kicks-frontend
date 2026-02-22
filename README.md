@@ -1,3 +1,66 @@
+# Frontend Application Documentation
+
+## Repository Information
+
+- **GitHub URL:** https://github.com/Disha-1751999/kicks-frontend
+- **Live URL:** <LIVE_DEPLOYMENT_URL>
+
+---
+
+## Project Overview
+
+<PROJECT_NAME> is a modern, modular, and production-ready frontend application built with clean architecture principles and scalable structure.  
+
+The project demonstrates best practices in:
+
+- Component-based architecture
+- Meaningful Git commit history
+- Environment configuration management
+- Code linting and formatting
+- Production deployment
+
+---
+
+## Features
+
+- Responsive UI design
+- Reusable modular components
+- Clean routing structure
+- API integration (if applicable)
+- Loading and error state handling
+- Environment-based configuration
+- Production-ready build optimization
+
+---
+
+## Tech Stack
+
+- **Framework:** React / Next.js / Vue (update accordingly)
+- **Language:** JavaScript / TypeScript
+- **Styling:** Tailwind CSS / CSS Modules / Styled Components / MUI
+- **State Management:** Context API / Redux / Zustand / React Query
+- **Build Tool:** Vite / Next.js Build
+- **Linting:** ESLint
+- **Formatting:** Prettier
+- **Deployment:** Vercel / Netlify / Render / Firebase
+
+---
+
+## Project Structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
