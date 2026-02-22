@@ -3,13 +3,13 @@
 ## Repository Information
 
 - **GitHub URL:** https://github.com/Disha-1751999/kicks-frontend
-- **Live URL:** <LIVE_DEPLOYMENT_URL>
+- **Live URL:** https://kicks-frontend-kqvu.vercel.app/
 
 ---
 
 ## Project Overview
 
-<PROJECT_NAME> is a modern, modular, and production-ready frontend application built with clean architecture principles and scalable structure.  
+KICKS is a modern, modular, and production-ready frontend application built with clean architecture principles and scalable structure.  
 
 The project demonstrates best practices in:
 
@@ -26,7 +26,7 @@ The project demonstrates best practices in:
 - Responsive UI design
 - Reusable modular components
 - Clean routing structure
-- API integration (if applicable)
+- API integration
 - Loading and error state handling
 - Environment-based configuration
 - Production-ready build optimization
@@ -35,19 +35,64 @@ The project demonstrates best practices in:
 
 ## Tech Stack
 
-- **Framework:** React / Next.js / Vue (update accordingly)
-- **Language:** JavaScript / TypeScript
-- **Styling:** Tailwind CSS / CSS Modules / Styled Components / MUI
-- **State Management:** Context API / Redux / Zustand / React Query
-- **Build Tool:** Vite / Next.js Build
-- **Linting:** ESLint
-- **Formatting:** Prettier
-- **Deployment:** Vercel / Netlify / Render / Firebase
+- **Framework:**  Next.js 
+- **Language:**  TypeScript
+- **Styling:** Tailwind CSS 
+- **State Management:** Redux / React Query
+- **Deployment:** Vercel 
 
----
 
 ## Project Structure
 
+src/
+│
+├── app/ 
+├── store/
+├── components/
+├── features/
+├── services/
+├── ui/ 
+
+## Installation & Setup
+
+### Prerequisites
+
+- Node.js >= 16.x
+- npm / yarn / pnpm
+
+---
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Disha-1751999/kicks-frontend
+cd 
+```
+
+### Install modules
+
+```bash
+npm install
+```
+
+### Setup .env file
+
+```bash
+NEXT_PUBLIC_API_URL=https://api.escuelajs.co/api/v1
+```
+
+### Run the Application Locally
+
+```bash
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
 
 
 
